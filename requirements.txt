@@ -1,0 +1,9 @@
+fastapi==0.79.0
+pydantic==1.9.1
+uvicorn==0.18.2
+sqlalchemy==1.4.39
+mysqlclient==2.1.0
+bleach==4.1.0
+validators==0.18.2
+loguru==0.5.3
+requests==2.27.1

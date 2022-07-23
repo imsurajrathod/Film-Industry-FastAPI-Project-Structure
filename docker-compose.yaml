@@ -1,0 +1,39 @@
+version: '3.1'
+
+volumes:
+  filmIndustry.db:
+
+networks:
+  filmindustry-network:
+    external: false
+
+services:
+  web:
+    build:
+      context: ./
+    image: filmindustry:latest
+    volumes:
+      - ./app:/filmIndustry/app
+      - ./logs:/filmIndustry/logs
+    ports:
+      - '8401:8401'
+    env_file:
+      - app/.env
+    depends_on:
+      - db
+    networks:
+      - filmindustry-network
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - '4406:3306'
+    volumes:
+      - filmIndustry.db:/var/lib/mysql
+    cap_add:
+      - SYS_NICE  # CAP_SYS_NICE
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: filmIndustry
+    networks:
+      - filmindustry-network
