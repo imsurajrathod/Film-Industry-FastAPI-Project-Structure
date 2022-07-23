@@ -13,7 +13,7 @@ It is dockerized project. So you need docker installed in your system.
 
 Installing
 ----------
-Download the `project` file [here](/target/github-download-1.0-SNAPSHOT-jar-with-dependencies.jar). 
+Download the `project` file [here](https://github.com/imsurajrathod/filmIndustry/archive/refs/heads/main.zip). 
 It includes all dependencies. You must have the to build and the run the project.
 
 1) `docker compose build` - To build the image
