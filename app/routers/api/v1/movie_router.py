@@ -23,7 +23,7 @@ def get_movie_by_movie_id(movie_id: str, db: Session = Depends(get_db)):
     return movie_service.get_movie_by_movie_id(movie_id, db)
 
 
-@router.delete('/{cart_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
+@router.delete('/{movie_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
 def delete_movie_by_movie_id(movie_id: str, db: Session = Depends(get_db)):
     is_deleted = movie_service.delete_movie_by_movie_id(movie_id, db)
     return Response(status_code=HTTPStatus.NO_CONTENT.value)
