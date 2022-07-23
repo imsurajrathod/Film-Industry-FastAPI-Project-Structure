@@ -30,6 +30,9 @@ SQLALCHEMY_DATABASE_URI=mysql://root:dbpass@{your_local_machine_ip} # For local 
 Images
 ----------
 
+<img width="922" alt="FastAPI - Swagger" src="https://user-images.githubusercontent.com/72437756/180607315-35e88d54-d372-48b3-bb52-3e299a6ccea2.png">
+
+<img width="1112" alt="FastAPI - redoc" src="https://user-images.githubusercontent.com/72437756/180607326-b51109ef-e239-4830-963c-b2943946d797.png">
 
 
 
