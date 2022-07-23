@@ -7,6 +7,10 @@ Prerequisite
 ----------
 It is dockerized project. So you need docker installed in your system.
 
+Note
+----------
+No Validation add in code. It is just to demonstrate the best practices & project structure I follow.
+
 Installing
 ----------
 Download the `project` file [here](/target/github-download-1.0-SNAPSHOT-jar-with-dependencies.jar). 
